@@ -5,61 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viewbille Mae Empis - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
-    <header>
-        <h1 id="name">Viewbille's Portfolio</h1>
-        <nav id="navigation-bar">
-            <button id="homeBtn">Home</button>
-            <button id="aboutMe">About Me</button>
-            <button id="projects">Projects</button>
-            <button id="contacts">Contacts</button>
-            <button id="aboutTheDev">About the Dev</button>
-        </nav>
+    <!-- Background Blobs -->
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+
+    <header id="main-header">
+        <div class="header-container">
+            <a href="#" id="logo">Viewbille.</a>
+            
+            <nav id="navigation-bar">
+                <a href="#intro" class="nav-link">Home</a>
+                <a href="#about-me-section" class="nav-link">About Me</a>
+                <a href="#projects-section" class="nav-link">Projects</a>
+                <a href="#contact-section" class="nav-link">Contacts</a>
+                <a href="#about-dev-section" class="nav-link">About Dev</a>
+            </nav>
+
+            <div class="header-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <i id="theme-icon" data-lucide="moon"></i>
+                </button>
+                <button id="mobile-menu-btn" class="mobile-only" aria-label="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
     </header>
     
     <main>
-        <div id="intro" class="content-section active">
-            <h2>Hello I am Viewbille</h2>
-            <img src="profile.png" alt="Viewbille's Profile Photo" id="pfp">
-        </div>
-
-        <div id="about-me-section" class="content-section" style="display: none;">
-            <h2>About Me</h2>
-            <p>This is where Viewbille will introduce herself, her skills, and her passion for development.</p>
-        </div>
-
-        <div id="projects-section" class="content-section" style="display: none;">
-            <h2>My Projects</h2>
-            <div class="project-item">
-                <h3>Project 1: Portfolio Website</h3>
-                <p>A personal portfolio showcasing web development skills.</p>
-                <a href="#">View Project</a>
+        <section id="intro" class="section-hero animate-on-scroll">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="greeting">Hello, I am</span>
+                    <h1>Viewbille Mae Empis<span class="dot">.</span></h1>
+                    <p class="subtitle">A passionate web developer focused on creating beautiful, responsive, and functional web applications with modern design principles.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects-section" class="btn btn-primary">View Projects</a>
+                        <a href="#contact-section" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="glass-orb"></div>
+                    <img src="profile.png" alt="Viewbille's Profile Photo" id="pfp">
+                </div>
             </div>
-            <div class="project-item">
-                <h3>Project 2: E-commerce Site (Concept)</h3>
-                <p>A conceptual e-commerce platform built with modern web technologies.</p>
-                <a href="#">View Project</a>
+        </section>
+
+        <section id="about-me-section" class="animate-on-scroll">
+            <h2 class="section-title">About Me</h2>
+            <div class="glass-card about-content">
+                <div class="about-text">
+                    <p>I am Viewbille, an enthusiastic developer dedicated to bringing ideas to life through code. I enjoy exploring modern web aesthetics, crafting intuitive user interfaces, and ensuring seamless experiences across all devices.</p>
+                    <ul class="skills-list">
+                        <li><i data-lucide="code" class="skill-icon"></i> HTML5 & CSS3</li>
+                        <li><i data-lucide="terminal" class="skill-icon"></i> Vanilla JavaScript</li>
+                        <li><i data-lucide="layout" class="skill-icon"></i> Responsive Design</li>
+                        <li><i data-lucide="palette" class="skill-icon"></i> UI/UX Principles</li>
+                    </ul>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div id="contact-section" class="content-section" style="display: none;">
-            <h2>Contact Me</h2>
-            <p>You can reach Viewbille via:</p>
-            <ul>
-                <li>Email: example@example.com</li>
-                <li>LinkedIn: <a href="#">linkedin.com/in/viewbille</a></li>
-                <li>GitHub: <a href="#">github.com/viewbille</a></li>
-            </ul>
-        </div>
+        <section id="projects-section" class="animate-on-scroll">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="glass-card project-item">
+                    <i data-lucide="folder-code" class="project-icon"></i>
+                    <h3>Portfolio Website</h3>
+                    <div class="project-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Glassmorphism</span>
+                    </div>
+                    <p>A personal portfolio showcasing web development skills, featuring a custom dark mode, glassmorphism elements, and scroll animations.</p>
+                    <a href="#" class="btn-link">View Project <i data-lucide="arrow-right"></i></a>
+                </div>
+                <div class="glass-card project-item">
+                    <i data-lucide="shopping-bag" class="project-icon"></i>
+                    <h3>E-commerce Concept</h3>
+                    <div class="project-tags">
+                        <span>Web Design</span><span>UI/UX</span>
+                    </div>
+                    <p>A conceptual e-commerce platform built with modern web technologies focusing on a clean and accessible user experience.</p>
+                    <a href="#" class="btn-link">View Project <i data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+        </section>
 
-        <div id="about-dev-section" class="content-section" style="display: none;">
-            <h2>About the Developer</h2>
-            <p>This section is about Jhon Paul, the developer behind this portfolio.</p>
-        </div>
+        <section id="contact-section" class="animate-on-scroll">
+            <h2 class="section-title">Let's Connect</h2>
+            <div class="contact-wrapper">
+                <div class="glass-card contact-card">
+                    <h3>Get in Touch</h3>
+                    <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                    <div class="social-links">
+                        <a href="mailto:example@example.com" class="social-btn">
+                            <i data-lucide="mail"></i> example@example.com
+                        </a>
+                        <a href="#" class="social-btn">
+                            <i data-lucide="linkedin"></i> LinkedIn
+                        </a>
+                        <a href="#" class="social-btn">
+                            <i data-lucide="github"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about-dev-section" class="animate-on-scroll">
+            <h2 class="section-title">About the Developer</h2>
+            <div class="glass-card contact-card">
+                <i data-lucide="cpu" class="dev-icon"></i>
+                <p>This personal portfolio was developed by <strong>Jhon Paul (JPB17387)</strong>. As a junior web developer, I am focused on building functional and well-structured web applications, utilizing modern AI tools as force multipliers for execution and prototyping.</p>
+                <div style="margin-top: 20px;">
+                    <a href="https://github.com/JPB17387" target="_blank" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9em;">
+                        <i data-lucide="github" style="width: 18px;"></i> Visit Github
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
