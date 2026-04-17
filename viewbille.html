@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewbille Mae Empis - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="name">Viewbille's Portfolio</h1>
+        <nav id="navigation-bar">
+            <button id="homeBtn">Home</button>
+            <button id="aboutMe">About Me</button>
+            <button id="projects">Projects</button>
+            <button id="contacts">Contacts</button>
+            <button id="aboutTheDev">About the Dev</button>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="intro" class="content-section active">
+            <h2>Hello I am Viewbille</h2>
+            <img src="profile.png" alt="Viewbille's Profile Photo" id="pfp">
+        </div>
+
+        <div id="about-me-section" class="content-section" style="display: none;">
+            <h2>About Me</h2>
+            <p>This is where Viewbille will introduce herself, her skills, and her passion for development.</p>
+        </div>
+
+        <div id="projects-section" class="content-section" style="display: none;">
+            <h2>My Projects</h2>
+            <div class="project-item">
+                <h3>Project 1: Portfolio Website</h3>
+                <p>A personal portfolio showcasing web development skills.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-item">
+                <h3>Project 2: E-commerce Site (Concept)</h3>
+                <p>A conceptual e-commerce platform built with modern web technologies.</p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+
+        <div id="contact-section" class="content-section" style="display: none;">
+            <h2>Contact Me</h2>
+            <p>You can reach Viewbille via:</p>
+            <ul>
+                <li>Email: example@example.com</li>
+                <li>LinkedIn: <a href="#">linkedin.com/in/viewbille</a></li>
+                <li>GitHub: <a href="#">github.com/viewbille</a></li>
+            </ul>
+        </div>
+
+        <div id="about-dev-section" class="content-section" style="display: none;">
+            <h2>About the Developer</h2>
+            <p>This section is about Jhon Paul, the developer behind this portfolio.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Viewbille Mae Empis. All rights reserved.</p>
+    </footer>
+
+    <script src="functionality.js"></script>
+</body>
+</html>
