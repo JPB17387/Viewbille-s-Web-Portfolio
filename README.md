@@ -62,4 +62,4 @@ This repository and its content are licensed under the [Creative Commons Attribu
 You are free to share and redistribute the material, but you must give appropriate credit, you may not use the material for commercial purposes, and if you remix, transform, or build upon the material, you may not distribute the modified material.
 
 ## Link to the Live Website
-[Click here:](https://jpb17387.github.io/Viewbille-s-Web-Portfolio/homepage.html)
+[Click here:](https://jpb17387.github.io/Viewbille-s-Web-Portfolio/viewbille.html)   

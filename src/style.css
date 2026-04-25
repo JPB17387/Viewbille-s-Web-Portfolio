@@ -151,7 +151,7 @@ header.scrolled {
     display: flex;
     gap: 25px;
 }
-
+                                   
 #navigation-bar a {
     text-decoration: none;
     color: var(--text-secondary);
