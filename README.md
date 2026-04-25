@@ -1,6 +1,6 @@
 # Viewbille Mae Empis - Personal Portfolio
 
-![Viewbille Portfolio Preview](profile.png)
+![Viewbille Portfolio Preview](/public/profile.png)
 
 Welcome to the personal portfolio of **Viewbille Mae Empis**. This project is a customized, responsive, and dynamic web portfolio built to showcase web development skills, projects, and personal information in a clean, modern interface.
 
